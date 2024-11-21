@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Shadows Into Light', cursive;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #ef4136, #fbb040);
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.card {
+    width: 450px;
+    background: rgba(255, 255, 255, .5);
+    padding: 4rem;
+    border-radius: 10px;
+    position: relative;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    background: rgba(255, 255, 255, .15);
+    inset: 0;
+    transform: rotate(-5deg);
+    z-index: -1;
+    border-radius: 10px;
+}
+
+.logo {
+    margin-bottom: 2rem;
+}
+
+.logo img {
+    width: 70px;
+}
+
+.logo,
+.header {
+    text-align: center;
+}
+
+.header {
+    margin-bottom: 2rem;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+p, label{
+    font-size: 1.3rem;
+}
+
+.form .form-item {
+    position: relative;
+}
+
+.card input[type='text'] {
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, .3);
+    padding: 1rem 1.5rem;
+    padding-left: calc(1rem * 3.5);
+    border-radius: 100px;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+.card input:focus {
+    background: white;
+}
+
+.card button {
+    background: black;
+    color: white;
+    padding: 1rem;
+    border-radius: 100px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+}
+
+.card button:hover {
+    background-color: rgba(0,0,0,.85);
+    cursor: pointer;
+}
+
+.cat-info {
+    margin: auto;
+}
